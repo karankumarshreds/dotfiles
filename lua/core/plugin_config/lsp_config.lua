@@ -4,7 +4,9 @@ lspconfig.tsserver.setup {}
 lspconfig.rust_analyzer.setup {
   -- Server-specific settings. See `:help lspconfig-setup`
   settings = {
-    ['rust-analyzer'] = {},
+    ['rust-analyzer'] = {
+        autocomplete = true,
+    },
   },
 }
 
