@@ -9,11 +9,12 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+lspconfig.gopls.setup {}
 
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "rust_analyzer", "tsserver" },
+    ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "gopls" },
 }
 
 vim.o.signcolumn="yes"
